@@ -10,9 +10,7 @@ ScoreCol = Database["Scores"]
 
 CharacterCol.drop()
 MonsterCol.drop()
-ScoreCol.drop()
 
 # Insertion dans la base de donnée
 CharacterCol.insert_one(dictPersonnages)
 MonsterCol.insert_one(dictMonstres)
-ScoreCol.insert_one(dictScore)
