@@ -25,7 +25,7 @@ def lancer_vague_persos(vagues, persos, persos_stats, ennemi, ennemi_stats):
 def lancer_vagues(vagues, persos, persos_stats, ennemi, ennemi_stats):
     affichage_initial(persos, persos_stats, ennemi, ennemi_stats)
     while True:
-        lancer_vague_ennemi(persos, persos_stats, ennemi, ennemi_stats)
+        persos_stats = lancer_vague_ennemi(persos, persos_stats, ennemi, ennemi_stats)
         if persos_stats[0]["Vie"] != 0 or persos_stats[1]["Vie"] != 0 or persos_stats[2]["Vie"] != 0:
             (vagues, ennemi, ennemi_stats) = lancer_vague_persos(vagues, persos, persos_stats, ennemi, ennemi_stats)
         else:

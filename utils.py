@@ -37,9 +37,12 @@ def choix_equipe(ListePersos, ListeStats):
     while len(equipe) < 3:
         num = input("Tu veux quel perso? Donne moi le chiffre : ")
         if num.isdigit() and int(num) < len(ListePersos):
-            print(ListePersos[int(num)])
-            equipe.append(ListePersos[int(num)])
-            equipeStats.append(ListeStats[int(num)])
+            if ListePersos[int(num)] in equipe:
+                print("Personnage déja choisi")
+            else:
+                print(ListePersos[int(num)])
+                equipe.append(ListePersos[int(num)])
+                equipeStats.append(ListeStats[int(num)])
         else:
             print("Mauvaise valeur, entre un vrai numéro.")
     return (equipe, equipeStats)
