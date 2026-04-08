@@ -109,18 +109,3 @@ dictMonstres = {
         "Attack" : 0
     }
 }
-
-dictScore = {
-    "Score1": {
-        "Nom": "Paul",
-        "Score": 0
-    },
-    "Score2": {
-        "Nom": "Vishwa",
-        "Score": 0
-    },
-    "Score3": {
-        "Nom": "Fayçal",
-        "Score": 0
-    }
-}
